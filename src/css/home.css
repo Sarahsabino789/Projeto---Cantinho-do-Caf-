@@ -1,0 +1,71 @@
+
+.itim-regular {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+header {
+    background-image: url(/src/imagens/fundo\ header.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 1338px;
+}
+
+hgroup#titulos h1 {
+    font-family: "Itim", cursive;
+    font-size: 50pt;
+    margin: 5px 1px 1px 280px;
+    position: relative;
+    color :#FFFBE5;
+}
+
+hgroup {
+    position: relative;
+    display: block;
+}
+hgroup img#planta {
+    height: 150px;
+    width: 120px;
+    position: absolute;
+    top: 1;
+    left: 150px;
+}
+
+hgroup#titulos p {
+    font-family: "Itim", cursive;
+    font-size: 24pt; 
+    margin: -20px auto 70px 440px;
+    color: #FFFBE5;
+}
+
+nav#menu {
+    position: relative;
+    text-align: center;
+}
+
+nav#menu a {
+    text-decoration: none;
+    color: black;
+    border-radius: 50px;
+    display: inline-block;
+    border: 2px solid black;
+    padding: 7px;
+    background-color: #FFFEF2;
+}
+
+
+nav#menu ul {
+   list-style: none;
+   display: flex;
+   justify-content: center;
+   margin-top: 50px;
+}
+
+nav#menu li {
+    padding: 10px;
+    font-size: 25pt;
+    font-family: "Itim", cursive;
+}
