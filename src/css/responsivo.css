@@ -1,0 +1,41 @@
+@media (max-width: 900px){
+     header hgroup#titulos h1 {
+        font-size: 35pt;
+        margin-bottom: 5px;
+    }
+
+    header hgroup#titulos p {
+        font-size: 13pt;
+         margin-left: 35px;
+         text-shadow: 1px 1px 1px black;
+    }
+
+    header hgroup#titulos img {
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    top: 9px;
+    left: 340px;
+}
+
+    nav#menu-principal {
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+   
+    }
+
+  nav ul#menu {
+    justify-content: center;
+    height: 5vh;
+    width: 90%;
+    gap: 1px;
+}
+  nav ul#menu li {
+    height: 25px;
+    font-size: 10pt;
+    padding: 3px;
+    margin-top: 6px;
+  }
+}
+

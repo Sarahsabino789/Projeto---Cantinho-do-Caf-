@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/home.css">
     <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/responsivo.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,32 +19,28 @@
 
         <h1>Cantinho do <span id="colore">Café</span></h1>
 
-        <img id="planta" src="/src/imagens/Simbolo planta claro.png" alt="símbolo da planta">
-
         <p>Onde cada grão conta uma história a cada xícara</p>
-        
-        <img id="simbolocafe" src="/src/imagens/simbolo café.png" alt="símbolo - cantinho do café">
+         <img  id="planta" src="/src/imagens/Simbolo planta claro.png" height="150px" width="150px">
         </hgroup>
-
-    <nav id="menu">
-    <ul> 
+       
+    <nav id="menu-principal">
+    <ul id="menu">  
         <li><a href="home.html">Home</a></li>
         <li><a href="Cardápio.html">Cardápio</a></li>
-        <li><a href="Trabalhe-conosco-investidor.html">Seja um investidor | Trabalhe conosco</a></li>
+        <li><a href="Trabalhe-conosco-investidor.html">Seja um investidor | Trabalhe conosco</a>    
     </ul>
-    </nav>
-
+    </nav>    
 </header>
 
-<main id="main">
+<main id="principal">
 
-<section id="bemvindo" class="sessoes divisoria">
+<section id="bem-vindo" class="divisoria">
 
-    <div class="divisoria__img">
-        <img id="expresso" src="/src/imagens/Café espresso Macchiato.jpg" alt="espresso Macchiato">
+    <div class="divisoria-img">
+        <img src="/src/imagens/Café espresso Macchiato.jpg" alt="espresso Macchiato">
     </div>
 
-    <div class="divisoria__texto">
+    <div class="divisoria-txt">
         <h2>Seja bem-vindo ao seu novo refúgio favorito.</h2> 
         <p>
             No Cantinho do Café, nós acreditamos que o café não é apenas uma bebida, mas um ritual de pausa e conexão. Selecionamos grãos artesanais de produtores locais para garantir que você sinta o frescor e o aroma verdadeiro em cada gole.
@@ -52,14 +49,13 @@
 
 </section>
 
-<!-- texto esquerda, imagem direita -->
-<section id="diferenciais-atendimento" class="sessoes divisoria divisoria--invertida">
+<section id="nossos-diferenciais" class="divisoria">
 
-    <div class="divisoria__img">
+    <div class="divisoria-img  divisoria-invertida">
         <img id="atendente" src="/src/imagens/atendente da cafeteria.png" alt="atendente da cafeteria">
     </div>
 
-    <div class="divisoria__texto">
+    <div class="divisoria-txt">
         <h2>Nossos Diferenciais:</h2>
         <h3>Atendimento Humanizado:</h3>
         <p>Nossa equipe é apaixonada pelo que faz. Aqui, você não é apenas um cliente, é parte da nossa família. O atendimento é ágil, mas sempre com aquele sorriso e disposição para explicar as notas sensoriais de cada tipo de grão.</p>
@@ -68,13 +64,13 @@
 </section>
 
 <!-- imagem esquerda, texto direita -->
-<section id="diferenciais-ambiente" class="sessoes divisoria">
+<section id="ambiente" class="divisoria">
 
-    <div class="divisoria__img">
-        <img id="ambiente" src="/src/imagens/fora do balcão.jpg" alt="ambiente da cafeteria">
+    <div class="divisoria-img">
+        <img src="/src/imagens/fora do balcão.jpg" alt="ambiente da cafeteria">
     </div>
 
-    <div class="divisoria__texto">
+    <div class="divisoria-txt">
         <h3>Ambiente Aconchegante:</h3>
         <p>
             Criamos um espaço com música suave, Wi-Fi gratuito e poltronas confortáveis. É o lugar perfeito para ler um livro, trabalhar no seu notebook ou ter uma conversa agradável com amigos.
@@ -84,13 +80,16 @@
 </section>
 
 <!-- texto esquerda, imagem direita -->
-<section id="diferenciais-graos" class="sessoes divisoria divisoria--invertida">
+<section id="graos" class="divisoria">
 
-    <div class="divisoria__img">
-        <img id="graos" src="/src/imagens/sua-imagem-graos.jpg" alt="grãos de café">
+     <div  id="leque" class="divisoria-invertida">
+        <div class="card1"><img src="src/imagens/café - extra tostado - azul.jpg" alt="café - extra tostado"></div>
+        <div class="card2"><img src="src/imagens/café - tostado médio - amarelo.jpg" alt="café - tostado médio"></div>
+        <div class="card3"><img src="src/imagens/café - tostado suave - vermelho.jpg" alt="café - tostado suave"></div>
+        <div class="card4"><img src="src/imagens/Café - tostado variable - azcul claro.jpg" alt="Café - tostado variable"></div>
     </div>
 
-    <div class="divisoria__texto">
+    <div class="divisoria-txt">
         <h3>Grãos Selecionados:</h3>
         <p>
             Trabalhamos com processos de torra média e clara, preservando a doçura natural do café. Experimente nossos métodos de preparo: Prensa Francesa, Hario V60 e o clássico Espresso Italiano.
@@ -99,40 +98,77 @@
 
 </section>
 
+<div>
 
-<section class="sessoes">
-   
-<h2>Onde Estamos:</h2>
+    <section>
+        <div>
+            <h2>Onde Estamos:</h2>
+            <p>Estamos localizados em um ponto estratégico e charmoso da cidade.</p>
+        </div>
+        <div>
+            <img id="entrada" src="/src/imagens/Entrada da cafeteria (1).png" alt="Entrada da cafeteria">
+        </div>
+    </section>
 
-<p>Estamos localizados em um ponto estratégico e charmoso da cidade, fácil de encontrar e perfeito para uma parada no meio do dia.</p>
-(foto da entrada)
-<address>
+    <section>
+        <div class="coluna-texto">
+            <h2>Endereço:</h2>
+            <address>
+                <p>Rua dos Grãos Dourados, nº 123 – Bairro Aroma Doce.</p>
+                <p>Grão-Pará / SP.</p>
+            </address>
+        </div>
+        <div>
+            <img src="/src/imagens/balcão.png" alt="balcão da cafeteria">
+        </div>
+    </section>
 
-<p><strong>Endereço:</strong> Rua dos Grãos Dourados, nº 123 – Bairro Aroma Doce. (Próximo à Praça Central).</p>
-
-<p><strong>Cidade:</strong> Grão-Pará / SP.</p>
-
-</address>
-
-<h3><strong>Horário de Funcionamento:</strong></h3>
- <p>* Segunda a Sexta: das 07h às 20h.</p>
- <p>Sábados e Feriados: das 08h às 18h.</p>
-
-</section>
+    <section>
+        <div>
+            <h2>Horário de Funcionamento:</h2>
+            <p>Segunda a Sexta: das 07h às 20h.</p>
+            <p>Sábados e Feriados: das 08h às 18h.</p>
+        </div>
+        <div>
+            <img src="/src/imagens/funcionario decorando café.jpg" alt="">
+        </div>
+    </section>
+</div>
 
 <article>
 <h2>Depoimentos:</h2>
+<div>
+   <div>
 <p>"O melhor espresso da região! O ambiente realmente faz jus ao nome, é um cantinho onde o tempo parece parar." — Cliente Satisfeito.</p>
+    </div>
+<div>
+<p>"Minha parada obrigatória toda tarde. Além do café ser impecável, o que me prende é o silêncio e o cheiro de grão moído na hora. É o único lugar onde consigo realmente me concentrar e relaxar ao mesmo tempo." — Mariana Costa
+</p>
+    </div>
+<div>
+<p>"Sabe aquele lugar que abraça a gente? Fui pela primeira vez por causa do cheirinho que vinha da rua e agora não troco por nada. O cuidado na apresentação das bebidas e o ambiente rústico fazem toda a diferença." — Ricardo Mendes</p>
+    </div>
+</div>
 </article>
 
 </main>
 
 <footer>
-Cantinho do Café © 2026 – Todos os direitos reservados.
+    
+<div>
+<h2>Cantinho do Café</h2>
+<P>© 2026 – Todos os direitos reservados.</p>
+</div>
 
-Contatos: (11) 98765-4321 | contato@cantinhodocafe.com.br
+<div>
+<p>(11) 98765-4321</p>
+    <p>contato@cantinhodocafe.com.br</p>
+</div>
 
-Siga-nos: @CantinhoDoCafeReal 
+<div >
+<p>Siga-nos nas redes sociais</p>
+<a href="https://www.instagram.com/sarah_os28?igsh=YjlzcXhmMnFvNHly" target="_blank">@CantinhoDoCafeReal</a>
+</div> 
 </footer>
 </body>
 </html>
