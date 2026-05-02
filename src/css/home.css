@@ -5,6 +5,7 @@
 }
 body {
     max-width: 100%;
+    background: linear-gradient(to bottom, #BF8E63, #3B2314 , #260D03 95%);
 }
 
 /* Cabeçalho + hgroup simples, pequeno e responsivo. flexbox + position para posicionar onde quero os elementos*/
@@ -104,32 +105,45 @@ nav ul#menu a{
     white-space: nowrap;
 }
 
-/* section divisoria: onde imagem e texto ficarão lado a lado, alternando de posição a cada seção ( estilo zig-zag )*/
+/* Conteúdo principal: Flexbox vertical e largura fixa para evitar barra de rolagem.
+Definição de cores dos títulos e parágrafos, tamanhos de fonte, margem e cor de fundo com degradê para facilitar na mudança de cor do article*/
 
-main {
+main#principl {
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    background: linear-gradient(to bottom, #BF8E63, #3B2314 85%);
+    width: 100%;
 }
 
-main h2 {
+main#principal h2 {
+color: #FAF6EE;
+font-size: 25pt;
+text-align: center;
+margin: 25px 20px -30px 0;
+text-shadow: 1px 1px 1px black;
+
+}
+
+main#principal section div h2 {
     color: #FAF6EE;
     font-size: 25pt;
     margin-bottom: 15px;
 }
 
-main h3 {
+main#principal section div h3 {
     color:  #EDE0C4;
     font-size: 20pt;
     margin-bottom: 15px;
 }
 
-main p {
+main#principal section div p {
     color:  #F5ECD7;
     font-size: 15pt;
-    margin-bottom: 15px;
+    margin-bottom: 15px; 
+    text-align: center;
 }
+
+/* Cores das sections */
 
 section#bem-vindo {
     background-color: #727355;
@@ -147,13 +161,16 @@ section#graos {
     background-color: #7A1A2E;
 }
 
+/* section divisoria: onde imagem e texto ficarão lado a lado, alternando de posição a cada seção ( estilo zig-zag )*/
+
 section.divisoria {
     display: flex;
     justify-content: space-between;
     margin: 50px 0 10px;
     flex: 1;
-    box-shadow: 7px 6px 10px black, 7px -7px 10px black;
+    box-shadow: 2px 2px 10px black, 2px -2px 10px black;
     max-width: 100%;
+    border: 1px solid black;
 }
 
 div.divisoria-invertida, div.divisoria.txt {
@@ -170,10 +187,13 @@ div.divisoria-txt {
 
 
 div.divisoria-img img{
-    height: 40vh;
+    max-height: 45vh;
+    height: auto;
     width: 100vh;
     image-resolution: inherit;
     image-rendering: optimizeQuality;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
 }
 
 section#graos div img {
@@ -186,4 +206,221 @@ div#leque {
     display:flex;
     flex: 1;
     position: relative;
+}
+
+/* div para controlar as seções, colocá-las na horizontal e dar espaçamento vertical*/
+
+div#lado-a-lado {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px 0 50px 0;
+}
+ /* Cores das sections*/ 
+
+section#localizacao {
+    background-color: #3B4A2F;
+}
+
+section#endereco {
+    background-color: #6B1F30;
+}
+
+section#horario {
+    background-color: #2C1A0E;
+    white-space: nowrap;
+}
+
+section#horario img {
+    height: 350px;
+    width: 450px;
+}
+
+/* SECTION-COLUNA: Estilo caixa na vertical, onde a metade de cima é texto e a metade de baixo é imagem.*/
+
+section.coluna {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    box-shadow: 8px 7px 10px black, -8px -7px 10px black;
+    flex: 0;
+    border: 1px solid black;
+}
+
+div.coluna-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+div.coluna-img {
+    display: flex;
+    align-items:flex-end;
+    justify-content: stretch;
+}
+
+div.coluna-img img {
+    height: 350px;
+    width: 300px;
+    image-resolution: inherit;
+    image-rendering: optimizeQuality;
+}
+
+div#iframe {
+    display: flex;
+    align-items: flex-end;
+    justify-content: stretch;
+}
+
+/* Section-img: álbum curto de fotos utilizando flexbox para mostrar a loja + funcionários; fotos estilo polaroid com filtro envelhecido e animação ao passar o mouse,deixando-as preto e branco. */
+
+div#mostrando-txt {
+    text-align: center;
+    margin-bottom: 50px;
+    text-shadow: 1px 1px 1px black;
+
+}
+
+div span.coracao {
+    color:#8B0000;
+    -webkit-text-stroke: .1px #660000;
+}
+
+div#mostrando-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 50px;
+    gap: 20px;
+}
+
+figure.junta-txt-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 15px solid white;
+    border-bottom: 10px solid white;
+    background-color: white;
+    padding: -10px;
+    filter: sepia(0.3);
+    position: relative;
+}
+
+figure.junta-txt-img:hover {
+    filter: grayscale(100%);
+}
+
+div figure.junta-txt-img img {
+    height: 500px;
+    width: 380px;
+}
+
+figure.junta-txt-img figcaption {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+
+/* Articule-depoimentos: layout lado a lado com espaços iguais (flexbox) e estilização com jogo de sombras.*/
+
+article#card-depoimentos {
+     display: flex;
+     flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 20px;
+}
+
+article div#lado {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+article h2 {
+    color: #FAF6EE;
+}
+
+article div.depoimentos-txt {
+    flex: 1;
+    padding: 20px;
+    background-color: #D0E1B9;
+    box-shadow: 5px 5px 10px  #fffdd0c0, -8px -8px 10px black;
+    border-radius: 30px;
+    margin: 50px;
+    padding: 30px;
+    position: relative;
+}
+
+article p {
+    color: black;
+}
+
+article span.brilhante {
+    color: #FFFF00;
+    text-shadow: 0 -1px 10px #fffdd0c5, 0 0 10px #fffdd0c0;
+    -webkit-text-stroke: 0.1px  #FABB05;
+}
+
+div span.estrela {
+    color: #FABB05;
+}
+
+div span.depoimentos-nomes {
+    font-size: 23px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 12px;
+    right: 20px;
+    white-space: nowrap;
+}
+
+/* FOOTER-RODAPÉ: FOOTER SIMPLES ORGANIZADO 3 EM CIMA E 3 EMBAIXO*/
+footer#rodape {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+padding-top: 10px;
+border-top: 2px dotted white;
+}
+
+footer h2 {
+    font-size: 25pt;
+    color: #F5ECD7;
+}
+
+footer p {
+    font-size: 15pt;
+    color: #EDE0C4;
+    font-weight: bold;
+}
+
+footer a {
+    font-size: 15pt;
+    color: #A8294A;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+footer div.informacoes span {
+    color: #3D5229;
+    font-weight: bold;
+}
+
+footer div.informacoes {
+   margin: 50px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   align-items: center;
+  
 }

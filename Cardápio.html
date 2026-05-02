@@ -1,85 +1,217 @@
-Página — Cardápio
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/cardapio.css">
+    <link rel="stylesheet" href="/src/css/home.css">
+    <link rel="stylesheet" href="/src/css/reset.css">
+    <link rel="stylesheet" href="/src/css/responsivo.css">
 
-Cabeçalho da página
-Cantinho do Café — Cardápio
-Menu de navegação com os links: Home, Cardápio, Seja um investidor | Trabalhe conosco
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
 
-Categoria 1 — Espressos
-☕ Espressos
-[aqui é uma imagem da categoria ou faixa decorativa]
-Espresso Simples
-[aqui é uma imagem do espresso simples]
-clássico
-Puro, intenso e encorpado. Grão tostado médio.
-R$ 6,00
-Espresso Duplo
-[aqui é uma imagem do espresso duplo]
-clássico
-Dose dupla para os que precisam de mais energia.
-R$ 9,00
-Macchiato
-[aqui é uma imagem do macchiato]
-especial
-Espresso com toque de espuma de leite cremosa.
-R$ 10,00
-Ristretto
-[aqui é uma imagem do ristretto]
-especial
-Extração curta, sabor mais concentrado e doce.
-R$ 8,00
+    <title>Cantinho do Café</title>
+</head>
+<body>
+    <header>
+        <hgroup id="titulos">
 
-Categoria 2 — Com Leite
-🥛 Com Leite
-Cappuccino
-[aqui é uma imagem do cappuccino]
-favorito
-Espresso, leite vaporizado e espuma generosa.
-R$ 13,00
-Latte
-[aqui é uma imagem do latte]
-favorito
-Espresso suave com muito leite vaporizado.
-R$ 14,00
-Flat White
-[aqui é uma imagem do flat white]
-Espresso duplo com leite microespumado sedoso.
-R$ 15,00
+        <h1>Cantinho do <span id="colore">Café</span></h1>
 
-Categoria 3 — Gelados
-🧊 Gelados
-Cold Brew
-[aqui é uma imagem do cold brew]
-verão
-Café extraído a frio por 12h. Suave e refrescante.
-R$ 16,00
-Iced Latte
-[aqui é uma imagem do iced latte]
-verão
-Latte gelado com gelo e leite bem frio.
-R$ 15,00
-Affogato
-[aqui é uma imagem do affogato]
-Espresso quente despejado sobre sorvete de creme.
-R$ 18,00
+        <p>Onde cada grão conta uma história a cada xícara</p>
+         <img  id="planta" src="/src/imagens/Simbolo planta claro.png" height="150px" width="150px">
+        </hgroup>
+       
+    <nav id="menu-principal">
+    <ul id="menu"> 
+        <li><a href="home.html">Home</a></li>
+        <li><a href="Cardápio.html">Cardápio</a></li>
+        <li><a href="Trabalhe-conosco-investidor.html">Seja um investidor | Trabalhe conosco</a></li>    
+    </ul>
+    </nav>    
+</header>
 
-Categoria 4 — Métodos Especiais
-🫖 Métodos Especiais
-Hario V60
-[aqui é uma imagem do hario v60]
-artesanal
-Coado manual que realça a acidez e doçura do grão.
-R$ 18,00
-Prensa Francesa
-[aqui é uma imagem da prensa francesa]
-artesanal
-Encorpado e com textura aveludada. Clássico artesanal.
-R$ 17,00
-AeroPress
-[aqui é uma imagem do aeropress]
-Pressão suave, café limpo e com baixa acidez.
-R$ 17,00
+<main id="conteudo-cardapio">
+    
+ <h1>Cardápio</h1>
+ <div class="cat">
+ <h2>Categoria 1 - Espressos☕</h2> 
+</div>
+<section class="categorias"> 
 
-Rodapé
-Cantinho do Café © 2026 – Todos os direitos reservados.
-Contatos: (11) 98765-4321 | contato@cantinhodocafe.com.br
-Siga-nos nas redes sociais — @CantinhoDoCafeReal
+<div class="carrossel-horizontal">
+<h3>Espresso Simples</h3>
+<figure class="imgs">
+    <img src="/src/imagens/Café espresso.jpg" alt="">
+</figure>
+<h4>clássico</h4>
+<p>Puro, intenso e encorpado. Grão tostado médio.</p>
+<p><span>R$ 6,00</span></p>
+</div>
+
+<div class="carrossel-horizontal">
+<h3>Espresso Duplo</h3>
+<figure class="imgs">
+    <img src="/src/imagens/espresso duplo.jpg" alt="">
+</figure>
+<h4>clássico</h4>
+<p>Dose dupla para os que precisam de mais energia.</p>
+<p><span>R$ 9,00</span></p>
+</div>
+
+<div class="carrossel-horizontal">
+<h3>Macchiato</h3>
+<figure class="imgs">
+    <img src="/src/imagens/Café espresso Macchiato_resized.jpg" alt="">
+</figure>
+<h4>Especial</h4>
+<p>espresso com toque de espuma de leite cremosa.</p>
+<p><span>R$ 10,00</span></p>
+</div>
+
+<div class="carrossel-horizontal">
+<h3>Ristretto</h3>
+<figure class="imgs">
+    <img src="/src/imagens/ristretto.jpg" alt="">
+</figure>
+<h4>Especial</h4>
+<p>extração curta, sabor mais concentrado e doce.</p>
+<p><span>R$ 8,00</span></p>
+</div>
+</section>
+<div class="cat">
+<h2>Categoria 2 — Com Leite🥛</h2>
+</div>
+<section class="categorias">
+
+<div class="carrossel-horizontal">
+<h3>Cappuccino</h3>
+<figure class="imgs">
+    <img src="/src/imagens/Cappuccino.jpg" alt="">
+</figure>
+<h4>favorito</h4>
+    <p>Espresso, leite vaporizado e espuma generosa.</p>
+<p><span>R$ 13,00</span></p>
+</div>
+
+<div class="carrossel-horizontal">
+<h3>Latte</h3>
+<figure class="imgs">
+    <img src="/src/imagens/Latte.jpg" alt="">
+</figure>
+<h4>favorito</h4>
+<p>Espresso suave com muito leite vaporizado.</p>
+<p><span>R$ 14,00</span></p>
+</div>
+
+<div class="carrossel-horizontal">
+<h3>Flat White</h3>
+<figure class="imgs">
+    <img src="/src/imagens/lat white.jpg" alt="">
+</figure>
+<h4>favorito</h4>
+<p>Espresso duplo com leite microespumado sedoso.</p>
+<p><span>R$ 15,00</span></p>
+</div>
+</section>
+
+<div class="cat">
+<h2>Categoria 3 — Gelados🧊</h2>
+</div>
+
+<section class="categorias">
+
+<div class="carrossel-horizontal">
+<h3>Cold Brew<br>Com suco de laranja</h3>
+   <figure class="imgs">
+<img src="/src/imagens/Cold Brew com Suco de Laranja.jpg" alt="">
+</figure>
+<h4>Verão</h4>
+<p>Extraído a frio por 12 horas e finalizado com suco de laranja.</p>
+<p><span>R$ 16,00</span></p>
+</div>
+
+<div class="carrossel-horizontal">
+<h3>Iced Latte</h3>
+<figure class="imgs">
+<img src="/src/imagens/iced Latte.jpg" alt="">
+</figure>
+<h4>verão</h4>
+<p>Latte gelado com gelo e leite bem frio. Combinação suave e refrescante pra dias quentes.</p>
+<p><span>R$ 15,00</span></p>
+</div>
+
+<div class="carrossel-horizontal">
+<h3>Affogato</h3>
+<figure class="imgs">
+<img src="/src/imagens/affogato.jpg" alt="Affogato">
+</figure>
+<h4>Verão</h4>
+<p>Espresso quente despejado sobre sorvete de creme. Equilíbrio entre amargo e doce na medida certa.</p>
+<p><span>R$ 18,00</span></p>
+</div>
+</section>
+
+<div class="cat">
+<h2>Categoria 4 — Métodos Especiais🫖</h2>
+</div>
+
+<section class="categorias"> 
+
+<div class="carrossel-horizontal">
+<h3>Hario V60</h3>
+<figure class="imgs">
+<img src="/src/imagens/Hario v60.jpg" alt="">
+</figure>
+<h4>artesanal</h4>
+<p>Coado manual que realça a acidez e doçura do grão.</p>
+<p><span>R$ 18,00</span></p>
+</div>
+
+<div class="carrossel-horizontal">
+<h3>Prensa Francesa</h3>
+<figure class="imgs">
+<img src="/src/imagens/prensa artesanal.jpg" alt="">
+</figure>
+<h4>artesanal</h4>
+<p>Encorpado e com textura aveludada. Clássico artesanal.</p>
+<p><span>R$ 17,00</span></p>
+</div>
+
+<div class="carrossel-horizontal">
+<h3>AeroPress</h3>
+<figure class="imgs">
+<img src="/src/imagens/aeropress.jpg" alt="">
+</figure>
+<h4>artesanal</h4>
+ <p>Pressão suave, café limpo e com baixa acidez.</p>
+ <p><span>R$ 21,00</span></p>
+ </div>
+
+ </section>
+
+</main>
+
+<footer id="rodape">
+    
+<div class="informacoes">
+<h2>Cantinho do Café</h2>
+<p>
+    <span id="pintar-verde">© 2026 – Todos os direitos reservados.</span>
+</p>
+</div>
+
+<div class="informacoes">
+<a href="https://web.whatsapp.com/" target="_blank">(11) 98765-4321</a>
+    <p>contato@cantinhodocafe.com.br</p>
+</div>
+
+<div class="informacoes">
+<p>Siga-nos nas redes sociais</p>
+<a href="https://www.instagram.com/sarah_os28?igsh=YjlzcXhmMnFvNHly" target="_blank">@CantinhoDoCafeReal</a>
+</div> 
+</footer>
+</body>
+</html>

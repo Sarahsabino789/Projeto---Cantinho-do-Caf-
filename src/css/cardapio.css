@@ -1,0 +1,131 @@
+/* main-cardapio: Definição de cores dos títulos, subtítulos e parágrafos; deixar na vertical e fazer o H1 e H2 ficar acima de cada section.*/
+main#conteudo-cardapio {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+main#conteudo-cardapio h1 {
+font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+color: #F5ECD7;
+text-shadow: 1px 1px 1px black;
+text-align: center;
+margin-bottom: 10px;
+line-height: 1.1; 
+}
+
+main#conteudo-cardapio h2{
+font-size: clamp(1.75rem, 3vw + 1rem, 2.25rem);
+line-height: 1.2;
+color: #F5ECD7;
+text-shadow: 1px 1px 1px black;
+}
+
+main#conteudo-cardapio h3 {
+font-size: 1.5rem;
+color: #F5ECD7;
+text-shadow: 1px 1px 1px black;
+margin: 20px;
+text-align: center;
+white-space: nowrap;
+}
+
+main#conteudo-cardapio h4 {
+font-size: 1.400rem;
+color: #A8294A;
+text-shadow: 1px 1px 1px black;
+margin: 0 10px 0 10px;
+background-color: rgba(255, 255, 255, 0.1);
+width: 80px;
+}
+
+main#conteudo-cardapio p {
+font-size: 1.125rem;
+line-height: 1.6;
+color: #EDE0C4;
+text-shadow: 1px 1px 1px black;
+margin: 0 10px 0 10px;
+position: relative;
+}
+
+main#conteudo-cardapio p span {
+    display: inline-block;
+    font-size: 1.75rem;
+    color: #8A9;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px black;
+    position: relative;
+    bottom: 0;
+    left: 180px;
+    margin: 0 10px 0 0;
+}
+
+div.cat {
+    align-self: self-start;
+    margin-left: 140px;
+    margin-top: 20px;
+}
+
+/* section.categorias: Ecolhi rolagem lateral para mostrar como ficaria se tivesse muitos cafés assim não polui a tela e já deixa o layout pronto para escalar.
+overflow-x: funciona melhor no celular, pois arrasta pro lado.
+Usei verde floresta com transparência na section e verde oliva com transparência nos cards.
+
+*/
+
+section.categorias {
+    max-width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding: 30px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    border-bottom:  10px solid rgba(255, 255, 255, 0.1);
+    overflow-x: scroll;
+    margin: 10px;
+    gap: 45px;
+    border-radius: 30px;
+    background: rgba(30, 61, 50, 0.2);
+}
+
+.categorias::-webkit-scrollbar {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    height: 13px;
+}
+
+.categorias::-webkit-scrollbar-thumb {
+    background: #656663;
+    border-radius: 30px;
+}
+
+section.categorias img {
+    height: 180px;
+    width: 280px;
+    image-rendering: crisp-edges;
+    image-rendering: pixelated;
+    
+}
+
+figure.imgs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 10px;
+}
+
+/*div.carrossel-horizontal: Cada div tem imagem e info dentro, em formato de caixa para focar em um café por vez.*/
+
+div.carrossel-horizontal {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 10px;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    background-color: #606C36;
+    border-radius: 30px;
+    background: rgba(96, 108, 56, .2);
+    flex: 0;
+}
