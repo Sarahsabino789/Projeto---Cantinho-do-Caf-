@@ -1,3 +1,39 @@
+.pacifico-regular {
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.nunito {
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+.lora {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lobster-two-regular {
+  font-family: "Lobster Two", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
 /* main-cardapio: Definição de cores dos títulos, subtítulos e parágrafos; deixar na vertical e fazer o H1 e H2 ficar acima de cada section.*/
 main#conteudo-cardapio {
     max-width: 100%;
@@ -9,8 +45,11 @@ main#conteudo-cardapio {
 
 main#conteudo-cardapio h1 {
 font-size: clamp(2.5rem, 5vw + 1rem, 4.5rem);
+font-family: "Lobster Two", sans-serif;
+font-weight: 700;
 color: #F5ECD7;
-text-shadow: 1px 1px 1px black;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+-webkit-text-stroke: 1px solid  black;
 text-align: center;
 margin-bottom: 10px;
 line-height: 1.1; 
@@ -18,15 +57,18 @@ line-height: 1.1;
 
 main#conteudo-cardapio h2{
 font-size: clamp(1.75rem, 3vw + 1rem, 2.25rem);
+font-family: "Lobster Two", sans-serif;
+font-weight: 700;
 line-height: 1.2;
 color: #F5ECD7;
-text-shadow: 1px 1px 1px black;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 }
 
 main#conteudo-cardapio h3 {
-font-size: 1.5rem;
+font-size: 1.9rem;
 color: #F5ECD7;
-text-shadow: 1px 1px 1px black;
+font-family: "Lobster Two", sans-serif;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4);
 margin: 20px;
 text-align: center;
 white-space: nowrap;
@@ -34,6 +76,7 @@ white-space: nowrap;
 
 main#conteudo-cardapio h4 {
 font-size: 1.400rem;
+font-family: "Nunito", sans-serif;
 color: #A8294A;
 text-shadow: 1px 1px 1px black;
 margin: 0 10px 0 10px;
@@ -42,6 +85,8 @@ width: 80px;
 }
 
 main#conteudo-cardapio p {
+font-family: "Nunito", sans-serif;
+font-weight: 400;
 font-size: 1.125rem;
 line-height: 1.6;
 color: #EDE0C4;
@@ -51,11 +96,12 @@ position: relative;
 }
 
 main#conteudo-cardapio p span {
+    font-family: "Pacifico", cursive;
     display: inline-block;
     font-size: 1.75rem;
     color: #8A9;
     font-weight: bold;
-    text-shadow: 1px 1px 1px black;
+    text-shadow: 2px 1px 2px black;
     position: relative;
     bottom: 0;
     left: 180px;
