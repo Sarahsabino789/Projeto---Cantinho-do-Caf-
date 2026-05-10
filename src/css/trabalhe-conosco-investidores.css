@@ -15,7 +15,7 @@
 
 /* mainTI(Trabalhe-Investidores): flexbox apenas para colocar a div e a section lado a lado e definir os tamanhos, cores e font dos h2, p e li */
 main#TI {
-    background: linear-gradient(rgba(128, 128, 128, 0.6), rgba(128, 128, 128, 0.6)),url(/src/imagens/fundo\ do\ form.png);
+    background: linear-gradient(rgba(128, 128, 128, 0.6), rgba(128, 128, 128, 0.6)),url(src/imagens/fundo\ do\ form.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;

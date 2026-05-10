@@ -48,7 +48,7 @@ body {
 /* Cabeçalho + hgroup simples, pequeno e responsivo. flexbox + position para posicionar onde quero os elementos*/
 
 header {
-    background-image: url(/src/imagens/fundo\ header.png);
+    background-image: url(src/imagens/fundo\ header.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
