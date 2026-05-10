@@ -33,6 +33,10 @@
   font-style: normal;
 }
 
+html {
+    max-width: 100%;
+}
+
 body {
     max-width: 100%;
     background: linear-gradient(to bottom, #BF8E63, #3B2314 , #260D03 95%);
@@ -48,13 +52,17 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 100px;
+    min-height: 50px;
     max-height: 200px;
     max-width: 100%;
     position: relative;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+header img#simbolo-cantinho-cafe {
+    display: none;
 }
 
 header hgroup#titulos {
@@ -78,27 +86,34 @@ header hgroup#titulos p{
     font-family: "Inter", sans-serif;
     font-weight: 400;
     text-shadow: 3px 3px 3px black;
-    white-space: nowrap; /*faz a palavra não quebrar*/
+    white-space: wrap; /*faz a palavra não quebrar*/
     margin-left: 80px;
     margin-top: -13px;
 }
 
-header hgroup#titulos img {
+header img#planta {
     height: 100px;
     height: 100px;
     position: absolute;
-    bottom: -24px;
+    bottom: -16px;
     left: 500px;
+}
+
+header div.oculto {
+    display: none;
 }
 
 /* menu principal: tentativa de ser moderno, usando flexbox, margem, gap, border radius, border, padding, altura, largura, cores. inclui ma animação suave de troca de cores ao passar o mouse*/
 
 nav#menu-principal {
     display: flex;
-    align-self: flex-end;
+    align-items: center;
     padding-bottom: 10px;
-    margin: 0;
+    margin: 10px;
+    height: 80px;
     max-height: 100%;
+    width: 630px;
+    max-width: 100%;
 }
 
 nav ul#menu{
@@ -106,7 +121,6 @@ nav ul#menu{
   flex-direction: row;
   gap: 10px;
   border: 1px solid #A8294A;
-  height: 50px;
   background-color: #260D03;
   border-radius: 40px;
   padding: 0 20px;
@@ -170,7 +184,6 @@ main#principal section div h2 {
     margin-bottom: 15px;
     font-family: "Lora", serif;
     font-weight: 700;
-    white-space: nowrap;
 }
 
 main#principal section div h3 {
@@ -251,8 +264,6 @@ section#graos div img {
 }
 div#leque {
     display:flex;
-    flex: 1;
-    position: relative;
 }
 
 /* div para controlar as seções, colocá-las na horizontal e dar espaçamento vertical*/
@@ -288,7 +299,7 @@ section#horario img {
 
 section.coluna {
     display: flex;
-    flex-flow: column;
+    flex-direction: column;
     justify-content: space-between;
     box-shadow: 8px 7px 10px black, -8px -7px 10px black;
     flex: 0;

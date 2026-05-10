@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="/src/css/home.css">
     <link rel="stylesheet" href="/src/css/responsivo.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,21 +18,35 @@
 </head>
 <body>
     <header>
+        <img id="simbolo-cantinho-cafe" src="/src/imagens/Símbolo cantinho do café.png" alt="">
+
         <hgroup id="titulos">
 
         <h1>Cantinho do <span id="colore">Café</span></h1>
 
         <p>Onde cada grão conta uma história a cada xícara</p>
-         <img  id="planta" src="/src/imagens/Simbolo planta claro.png" height="150px" width="150px">
         </hgroup>
-       
+         <img  id="planta" src="/src/imagens/Simbolo planta claro.png" height="150px" width="150px">
+
         <nav id="menu-principal">
          <ul id="menu"> 
           <li><a href="home.html">Home</a></li>
           <li><a href="Cardápio.html">Cardápio</a></li>
           <li><a href="Trabalhe-conosco-investidor.html">Seja um investidor | Trabalhe conosco</a></li>    
          </ul>
-       </nav>  
+       </nav> 
+
+ <div class="dropdown oculto">
+  <button class="btn combina dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+    ☰ Menu
+  </button>
+  <ul class="dropdown-menu">
+    <li><a href="home.html">Home</a></li>
+    <li><a href="Cardápio.html">Cardápio</a></li>
+    <li><a href="Trabalhe-conosco-investidor.html">Seja um investidor | Trabalhe conosco</a></li>
+  </ul>
+</div>
+
     </header>
 
 <main id="principal">
@@ -116,7 +130,7 @@
     </section>
 
     <section id="endereco" class="coluna">
-        <div class="coluna-txt">
+        <div  id="endereco-txt" class="coluna-txt">
             <h2>Endereço:</h2>
             <address>
                 <p>Rua dos Grãos Dourados, nº 123 – Bairro Aroma Doce.</p>
@@ -129,12 +143,12 @@
     </section>
 
     <section id="horario" class="coluna">
-        <div class="coluna-txt">
+        <div id="horario-txt" class="coluna-txt">
             <h2>Horário de Funcionamento:</h2>
             <p>Segunda a Sexta: das 07h às 20h.</p>
             <p>Sábados e Feriados: das 08h às 18h.</p>
         </div>
-        <div class="coluna-img">
+        <div id="horario-img" class="coluna-img">
             <img src="/src/imagens/balcão.png" alt="">
         </div>
     </section>
@@ -210,5 +224,5 @@
 </div> 
 </footer>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </html>
